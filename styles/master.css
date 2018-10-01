@@ -35,4 +35,36 @@ body {
   border-radius: 50%;
   cursor: pointer;
   margin: 20px 10px;
+  transition: all 0.45s ease;
+}
+
+
+
+.option.scale{
+  transform: scale(46);
+}
+
+.result{
+  display: none;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+.result span {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.result .close{
+  margin-top: 70px;
+}
+
+.result .close a {
+  color: white;
+  font-size: 42px;
+  text-decoration: none; /*link no subrayado*/
+  border: 5px solid white;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
