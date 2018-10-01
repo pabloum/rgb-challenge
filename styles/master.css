@@ -1,0 +1,38 @@
+body {
+  color: white;
+  /* background: rgba(0,0,0,0.95); */
+  background: rgb(48,48,48); /* #303030 */
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+}
+
+.title{
+  display: block;
+  background: rgba(0, 0, 200, 0.5);
+}
+
+.score {
+  /* background: rgba(0,0,0,0.95); */
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+.question-container{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+.question{
+  font-size: 28px;
+}
+
+.option{
+  display: inline-block;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 20px 10px;
+}
