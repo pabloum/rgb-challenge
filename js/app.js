@@ -7,6 +7,12 @@ $(document).ready(function() {
   //enlaza el click de los círculos.
   $('.option').on("click", guess);
 
+  $('.close a').on('click', function() {
+    $('.result').hide();
+    $('.option').removeClass("scale");
+    game();
+  });
+
 });
 
 var correct;
@@ -27,18 +33,18 @@ function game() {
 }
 
 function guess() {
+  $(this).addClass('scale');
+
   var index = $('.option').index(this);
 
   if (index == correct) {
-    alert("Very well");
-    // var score = $(".score span").text();
+    $(".result.won").show();
     ++score;
   } else {
-    alert("Too bad");
+    $(".result.lost").show();
     score = 0;
   }
   $(".score span").text(score);
-  game();
 
 }
 
